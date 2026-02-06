@@ -1,3 +1,16 @@
 backend:
   name: git-gateway
-  branch: main # O la rama que estés usando
+  branch: latest
+
+media_folder: "public/images"
+public_folder: "/images"
+
+collections:
+  - name: "aceites"
+    label: "🌿 Aceites Esenciales"
+    folder: "src/content/aceites"
+    create: true
+    fields:
+      - { label: "Nombre", name: "title", widget: "string" }
+      - { label: "Imagen", name: "image", widget: "image" }
+      - { label: "Beneficios", name: "body", widget: "markdown" }
