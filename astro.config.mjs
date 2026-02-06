@@ -1,7 +1,6 @@
 import { defineConfig } from 'astro/config';
-import decapCms from 'astro-decap-cms'; // O la integración que ya tenías
 
 export default defineConfig({
+  // No necesitamos decapCms aquí si usamos la carpeta public/admin
   site: 'https://yoga-akaal.netlify.app',
-  integrations: [decapCms()],
 });
